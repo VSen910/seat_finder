@@ -8,8 +8,8 @@ import 'package:seat_finder/utils/colors.dart';
 import 'package:seat_finder/utils/constants.dart';
 import 'package:seat_finder/widgets/seat.dart';
 import 'package:seat_finder/utils/styles.dart';
-import 'package:seat_finder/widgets/down_seat.dart';
-import 'package:seat_finder/widgets/up_seat.dart';
+import 'package:seat_finder/widgets/down_seat_row.dart';
+import 'package:seat_finder/widgets/up_seat_row.dart';
 
 class Home extends ConsumerStatefulWidget {
   const Home({super.key});
@@ -95,12 +95,12 @@ class _HomeState extends ConsumerState<Home> {
                       if (index % 2 == 0) {
                         return Column(
                           children: [
-                            UpSeat(initSeatNum: 4 * index + 1),
+                            UpSeatRow(initSeatNum: 4 * index + 1),
                             SizedBox(height: 20.h),
                           ],
                         );
                       } else {
-                        return DownSeat(initSeatNum: 4 * index);
+                        return DownSeatRow(initSeatNum: 4 * index);
                       }
                     },
                   ),

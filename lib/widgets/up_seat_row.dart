@@ -4,8 +4,8 @@ import 'package:seat_finder/utils/colors.dart';
 import 'package:seat_finder/utils/styles.dart';
 import 'package:seat_finder/widgets/seat.dart';
 
-class UpSeat extends StatelessWidget {
-  const UpSeat({super.key, required this.initSeatNum});
+class UpSeatRow extends StatelessWidget {
+  const UpSeatRow({super.key, required this.initSeatNum});
 
   final int initSeatNum;
 

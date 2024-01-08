@@ -1,5 +1,4 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:hive/hive.dart';
 import 'package:seat_finder/utils/constants.dart';
 
 final isSearchedProviders = List.generate(
@@ -14,4 +13,3 @@ final isMarkedProviders = List.generate(
 
 final prevSearchSeatNumProvider = StateProvider<int?>((ref) => null);
 
-final boxProvider = Provider<Box?>((ref) => null);
