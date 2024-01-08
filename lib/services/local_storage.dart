@@ -3,13 +3,8 @@ import 'package:hive/hive.dart';
 import 'package:seat_finder/providers/providers.dart';
 import 'package:seat_finder/utils/constants.dart';
 
-Box? box;
-
 class LocalStorage {
-  static void initStorage() async {
-    box!.put(
-        'isMarkedStatus', List<bool>.generate(seatsInTrain, (index) => false));
-  }
+  static Box? box;
 
   static void populateData(WidgetRef ref) {
     for (int i = 0; i < seatsInTrain; i++) {

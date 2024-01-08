@@ -9,8 +9,7 @@ import 'package:seat_finder/services/local_storage.dart';
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
-  box = await Hive.openBox('isMarkedBox');
-  // LocalStorage.initStorage();
+  LocalStorage.box = await Hive.openBox('isMarkedBox');
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       systemNavigationBarColor: Colors.transparent,

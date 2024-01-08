@@ -64,7 +64,7 @@ class Functionalities {
       ref.read(provider.notifier).update((state) => false);
     }
     for (int i = 0; i < seatsInTrain; i++) {
-      box!.put(i, false);
+      LocalStorage.box!.put(i, false);
     }
   }
 }
